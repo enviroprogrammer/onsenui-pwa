@@ -12,8 +12,7 @@ self.addEventListener('install', function(e) {
             // If the request for any of these resources fails, _none_ of the resources will be
             // added to the cache.
             return cache.addAll([
-                '/',
-                '/index.html',
+                '/onsenui-pwa',
                 'https://unpkg.com/onsenui/css/onsenui.min.css',
                 'https://unpkg.com/onsenui/css/onsen-css-components.min.css',
                 'https://unpkg.com/onsenui/js/onsenui.min.js'
@@ -35,8 +34,7 @@ self.addEventListener('fetch', function(e) {
 // make PWA available when it's offline
 caches.open('myonsenuiapp').then(cache => {
     return cache.addAll([
-        '/',
-        '/index.html',
+        '/onsenui-pwa',
         '/manifest.json',
         'https://unpkg.com/onsenui/css/onsenui.min.css',
         'https://unpkg.com/onsenui/css/onsen-css-components.min.css',
