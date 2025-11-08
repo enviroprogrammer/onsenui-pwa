@@ -1,6 +1,7 @@
 {
   "name": "My Onsen UI PWA",
   "short_name": "Onsen PWA",
+  "scope": "/onsenui-pwa/",
   "start_url": "/onsenui-pwa/",
   "display": "standalone",
   "theme_color": "#ef4e2a",
